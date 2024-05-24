@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0;
+
+}
+
+body{
+    background: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header{
+    background-color: rgb(247, 242, 242);
+    border-bottom: rgb(162, 121, 79);
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.navegacion{
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{
+    width: 130px;
+    height: 80px;
+
+    float: left;
+    padding: 80px;
+
+}
+
+nav{
+    float: right;
+
+}
