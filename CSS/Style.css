@@ -70,7 +70,7 @@ nav ul li a:hover::before{
     margin: 0 270px;
 }
 
-.contenido-iten{
+.contenido-item{
     position: relative;
     display: inline-block;
 }
@@ -81,7 +81,7 @@ nav ul li a:hover::before{
     margin-left: 75px;
     padding: 50px;
     display: block;
-0
+}
 
 .texto{
     position: absolute;
@@ -90,7 +90,7 @@ nav ul li a:hover::before{
     transform: translate(-50%, -50%);
     background: none;
     color: rgb(4, 57, 70);
-    padding: 1opx;
+    padding: 10px;
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 0px;
 }
