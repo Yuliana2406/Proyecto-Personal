@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>123456789</title>
     <style>
@@ -15,9 +16,107 @@
             text-align: center;
             color: rgb(162, 121, 79);
         }
+        #form{
+            border: solid 3px rgb(162, 121, 79);
+            border-radius: 5px;
+            padding: 10px;
+            width: 550px;
+            height: 200px;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .grupo{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        label{
+            color: rgb(162, 121, 79);
+            width: 100px;
+        }
+
+        input{
+            width: 250px;
+        }
+
+        button{
+            border: none;
+            color: rgb(162, 121, 79);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #espacioinfo{
+            width: 200px;
+            text-align: center;
+            margin:  auto;
+            color:rgb(162, 121, 79);
+            padding-top: 30px;
+        }
     </style>
 </head>
 <body>
+    <form action="" id="form" autocomplete="off">
+        <h1>REGISTRO</h1>
+        <div class="grupo">
+            <label for="">Name:</label>
+            <input type="text" id="name" >
+        </div>
+        <div class="grupo">
+            <label for="">Email:</label>
+            <input type="text" id="email" >
+        </div>
+        <div class="grupo">
+            <label for="">Password:</label>
+            <input type="password" id="password" >
+        </div>
+        <button  type="submit"  d="enviar" onclick="imprimir()">Enviar</button>
+        <p id="espacioinfo"></p>
+        </form>
+       
+    
+          <script>
+            const form= document.getElementById("form");
+            const name= document.getElementById("name");
+            /*const Password= document.getElementById("password");*/
+            const password = document.getElementById("password");
+    
+            const espacioinfo= document.getElementById("espacioinfo")
+            form.addEventListener("submit", evento=>{
+               evento.preventDefault();
+               let emailval= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+               let info="";
+               let verificar=false;
+              /* console.log(name);*/
+               if(name.value.length < 2){
+                info+="el nombre debe ser mayor a dos caracteres <br>";
+                verificar=true;
+               }
+            //   console.log( emailval.test(email.value));
+               if(!emailval.test(email.value)){
+                   info+="el email es incorrecto <br>";
+                   verificar=true;
+                }
+                if(password.value.length <7){
+                    info+="la contraseña debe tener 8 o mas caracteres <br>";
+                    verificar=true;
+                }
+    
+                if(verificar){
+                   espacioinfo.innerHTML=info;
+                }
+                else{
+                //   espacioinfo.innerText("enviado con exito");
+                espacioinfo.innerText = "enviado con exito";
+    
+                  espacioinfo.style.color="#fff";
+                }
+            })
+        </script>
+        
     
 </body>
 </html>
