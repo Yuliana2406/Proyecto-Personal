@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http_equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>123456789</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>REGISTRO</title>
     <style>
         body{
             display: flex;
             justify-content: center;/* Centra horizontalemente*/
             align-items: center;
-            background-color: rgb(4, 57, 70);
+            background-color: #111828;
         }
         h1{
             text-align: center;
@@ -92,16 +93,16 @@
                let verificar=false;
               /* console.log(name);*/
                if(name.value.length < 2){
-                info+="el nombre debe ser mayor a dos caracteres <br>";
+                info+="El nombre debe ser mayor a dos caracteres <br>";
                 verificar=true;
                }
             //   console.log( emailval.test(email.value));
                if(!emailval.test(email.value)){
-                   info+="el email es incorrecto <br>";
+                   info+="El email es incorrecto <br>";
                    verificar=true;
                 }
                 if(password.value.length <7){
-                    info+="la contraseña debe tener 8 o mas caracteres <br>";
+                    info+="La contraseña debe tener 8 o mas caracteres <br>";
                     verificar=true;
                 }
     
@@ -110,7 +111,7 @@
                 }
                 else{
                 //   espacioinfo.innerText("enviado con exito");
-                espacioinfo.innerText = "enviado con exito";
+                espacioinfo.innerText = "Enviado con exito";
     
                   espacioinfo.style.color="#fff";
                 }
