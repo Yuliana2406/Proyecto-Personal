@@ -1,6 +1,4 @@
 :root {
-  /**
-     /* color */
 
   --black-fond: #111828;
   --white: #ffffff;
@@ -11,8 +9,7 @@
   --gradient-color: linear-gradient(90.35deg, #2563eb 0.36%, #d946ef 201.02%);
   --gradient-text: linear-gradient(89.83deg, #2563eb 0.11%, #d946ef 58.65%);
 
-  /**
-  /* typografia */
+
   --ff-jost: "Jost", san s-serif;
 
   /* font size */
@@ -29,14 +26,11 @@
 
   --fw-700: 700;
 
-  /**
-* transitions  */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
 }
 
-/* ------------ reset ------------ */
 li {
   list-style: none;
 }
@@ -58,7 +52,7 @@ body {
   font-size: var(--fs-8);
 }
 
-/* reutilización de styles */
+
 .container {
   padding-inline: 16px;
 }
@@ -325,6 +319,7 @@ nav ul li a:hover::before{
 /*******************IMG*****************/
 .contenido{
     margin: 0 270px;
+    text-align: center;
 }
 
 .contenido-item{
